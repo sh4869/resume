@@ -1,0 +1,137 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+% Set your name here
+\def\name{Kasai Nobuhiro}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {computer science},
+  pdftitle = {\name: resume},
+  pdfsubject = {resume},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\bfseries\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+
+\renewcommand{\labelitemi}{-}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+
+\begin{minipage}{0.45\linewidth}
+  \href{https://www.shibaura-it.ac.jp/}{Shibaura Institute of Technology} \\
+  Department of Computer Science \\
+  Born on September 17, 1997. \\
+  Tokyo, Japan
+\end{minipage}
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+    Phone: & (+8180) 6739-6214 \\
+    Email: & \href{mailto:nobuk4869@gmail.com}{\tt nobuk4869@gmail.com} \\
+    Web: & \href{https://sh4869.net}{\tt https://sh4869.net/} \\
+    GitHub: & \href{https://github.com/sh4869}{\tt sh4869} \\
+  \end{tabular}
+\end{minipage}
+
+\section*{Education}
+
+\begin{itemize}
+    \item M.A. Computer Science and Engineering, Shibaura Institute of Technology, Apr 2020 - Present.
+    \item B.S. Computer Science and Engineering, Shibaura Institute of Technology, Apr 2016 - Mar 2020.
+\end{itemize}
+
+\section*{Work Experience}
+\begin{description}
+    \item[Dwango(Part-time Programmer)]Oct. 2018 - Sep. 2019\\
+    Languages: TypeScript, Scala \\
+    Web front-end, MicroService 
+    \item[Dwango(Intern)]Aug. 2018 - Sep. 2018\\ 
+    Language: TypeScript \\
+    Web front-end, Game Engine
+    \item[CURUCURU(Part-time Programmer)]Apr. 2016 - Oct. 2018\\
+    Language: JavaScript, TypeScript, Golang \\
+    Web front-end, CLI Tools
+\end{description}
+
+\section*{Publications}
+\subsection*{Others}
+\begin{itemize}
+    \item 笠井信宏, 篠埜 功, パッケージマネージャにおける依存パッケージの衝突の解消方法 提案システムの考案及び実装, 情報処理学会 第126回プログラミング研究発表会, Oct 31, 2019.
+    \item 笠井信宏, 篠埜 功, パッケージマネージャにおけるパッケージの依存関係の事前計算によるパッケージ取得時間の短縮（ポスター・デモ）, 第22回プログラミングおよびプログラミング言語ワークショップ (PPL2020), ポスター・デモ発表, Mar 2, 2020.
+\end{itemize}
+\section*{Skilss}
+\subsection*{Programming Language}
+C, C++, Scala, JavaScript, TypeScript, Golang
+\subsection*{Tools, Platform}
+Web(HTML, CSS, Browser), Linux, Git, Docker, MySQL, STM32, etc... 
+\bigskip
+
+% Footer
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today \\
+    \href{\footerlink}{\texttt{\footerlink}}
+  \end{footnotesize}
+\end{center}
+
+\end{document}
